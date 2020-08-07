@@ -14,6 +14,8 @@ import {
     LIMPIAR_TAREA
 } from '../../types/Index'
 
+const shortid = require('shortid');
+
 const TareaState = (props) =>{
     const initalState = {
         tareas : [
@@ -46,6 +48,7 @@ const TareaState = (props) =>{
 
     // Agregar tarea a proyecto selecionado
     const agregarTarea = (tarea) =>{
+        tarea.id = shortid.generate()   
         dispatch({
             type: AGREGAR_TAREA,
             payload: tarea
