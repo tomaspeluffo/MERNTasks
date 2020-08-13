@@ -22,9 +22,9 @@ const shortid = require('shortid');
 const ProyectoState = props =>{
 
     const proyectos = [
-        {id: 1, nombre : "tienda virtual"},
-        {id: 2, nombre : "intranet"},
-        {id: 3, nombre : "pagina xxx"}
+        {id: 1, nombre : "Tienda Virtual"},
+        {id: 2, nombre : "Intranet"},
+        {id: 3, nombre : "Pagina Juan Mendez"}
     ]
 
     const initialState = {
