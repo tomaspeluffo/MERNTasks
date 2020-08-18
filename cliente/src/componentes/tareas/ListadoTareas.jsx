@@ -5,6 +5,7 @@ import tareaContext from '../../context/tareas/tareaContext'
 import {CSSTransition, TransitionGroup} from 'react-transition-group';
 
 
+
 const ListadoTareas = () => {
 
     // Extraer proyectos de state inicial
@@ -24,7 +25,7 @@ const ListadoTareas = () => {
 
     // Elimina un Proyecto
     const onClickEliminar = () =>{
-        eliminarProyecto(proyectoActual.id)
+        eliminarProyecto(proyectoActual._id)
     }
 
     return ( 
@@ -38,7 +39,7 @@ const ListadoTareas = () => {
                     <TransitionGroup>
                       {tareasproyecto.map(tarea =>(
                         <CSSTransition
-                            key= {tarea.id}
+                            key= {tarea._id}
                             timeout ={200}
                             classNames="tarea"
                         >   

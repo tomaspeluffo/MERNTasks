@@ -24,6 +24,7 @@ const NuevaCuenta = (props) => {
             mostrarAlerta(mensaje.msg, 'alerta-error');
 
         }
+       //eslint-disable-next-line
     }, [mensaje, autenticado, props.history])
 
 
